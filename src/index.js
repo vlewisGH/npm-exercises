@@ -1,6 +1,8 @@
 const $ = require('jquery');
 
-const sayHello = () => 'hello';
+import greetings from './say-hello';
 
-$('#test').append(`<h1>${sayHello()}</h1>`);
+console.log(greetings);
+
+$('#test').append(`<h1>${greetings}</h1>`);
 $('#test').css({'background-color':'blue','color':'yellow'});
